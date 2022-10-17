@@ -1,0 +1,47 @@
+
+.vo {
+    font-size: 16pix;
+}
+
+.pai {
+    width: 100px;
+    height: 100 px;
+    background: #0000FF;
+    color: #FFFF;
+    font-size: 32px;
+}
+
+.filho {
+    width: 80%;
+    height: 80%;
+    background: red;
+}
+
+/*
+RGB
+    RED
+    GREEN
+    BLUE
+
+HEXADECIMAL
+DECIMAL (10) => 0,1,2,3,4,5,6,7,8,9
+HEXADECIMAL (16) => 0,1,2,3,4,5,6,8,9,A,B,C,D,E,F
+*/
+/* UNIDADE DE MEDIDAS
+
+-> ABSOLUTAS
+    px (pixels) 1/100 polegada 0,254mm
+    in (inches/polegadas)
+    cm / mm (centímetro / milímetro)
+
+-> RELATIVAS
+    % calcula o tamanho relativo ao elemento pai
+    vw (view width) 1vw é 1% da largura da janela do navegador
+    vh (view height) 1vh é 1% da altura da janela do navegador
+    emphemeral unit
+    em é uma unidade relativa ao elemento pai
+    rott emphemeral unit
+    rem é uma unidade relativa ao elemento raiz
+*/
+
+

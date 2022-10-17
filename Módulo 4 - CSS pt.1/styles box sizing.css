@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    /* sempre vai manter i width e height vai manter */
+    box-sizing: content-box;
+    /* pode alterar o tamanho do width e height */
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    background: #ff1493FF;
+    padding: 20px;
+    border:  10px solid #0000FF;
+    /*primeiro tamanho, depois tipo e depois cor */
+}
