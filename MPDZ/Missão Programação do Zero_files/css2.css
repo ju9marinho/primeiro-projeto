@@ -1,0 +1,12 @@
+@font-face {
+	font-family: Poppins;
+	src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6V1g.woff) format("woff");
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: Poppins;
+	src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7V1g.woff) format("woff");
+	font-weight: 700;
+	font-style: normal;
+}

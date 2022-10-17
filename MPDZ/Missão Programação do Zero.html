@@ -1,0 +1,111 @@
+﻿<!DOCTYPE HTML>
+<!DOCTYPE html PUBLIC "" ""><HTML lang="pt-br"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+     
+<META charset="UTF-8">     
+<META http-equiv="X-UA-Compatible" content="IE=edge">     
+<META name="viewport" content="width=device-width, initial-scale=1.0">     <LINK 
+href="Missão%20Programação%20do%20Zero_files/styles.css" rel="stylesheet">     
+<LINK href="https://fonts.googleapis.com" rel="preconnect">     <LINK href="https://fonts.gstatic.com" 
+rel="preconnect" crossorigin="">     <LINK href="Missão%20Programação%20do%20Zero_files/css2.css" 
+rel="stylesheet">     <TITLE>Missão Programação do Zero</TITLE> 
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD> 
+<BODY><IMG src="Missão%20Programação%20do%20Zero_files/imagem-missao.png">
+<DIV id="caixa-numeros"><SPAN class="numeros" id="horas">00</SPAN>         <SPAN 
+class="numeros">:</SPAN>         <SPAN class="numeros" id="minutos">00</SPAN>    
+     <SPAN class="numeros">:</SPAN>         <SPAN class="numeros" 
+id="segundos">00</SPAN>         <SPAN class="numeros">:</SPAN>         <SPAN 
+class="numeros numero-verde" id="mili">00</SPAN>     </DIV>
+<DIV id="caixa-botoes"><BUTTON class="botoes" id="start">Start</BUTTON>         
+<BUTTON class="botoes" id="stop">Stop</BUTTON>         <BUTTON class="botoes" 
+id="reset">Reset</BUTTON>     </DIV>
+<SCRIPT>
+
+    let btnStart = document.getElementById("start") //ESSA VARIAVEL E O NOSSO BOTAO DO HTML
+    let btnStop = document.getElementById("stop") //ESSA VARIAVEL E O NOSSO BOTAO DO HTML
+    let btnReset = document.getElementById("reset")
+    let mili = document.getElementById("mili") //ESSA VARIAVEL E O MILISEGUNDO DO HTML
+    let segundos = document.getElementById("segundos") //ESSA VARIAVEL E O SEGUNDOS DO HTML
+    let minutos = document.getElementById("minutos") //ESSA VARIAVEL E OS MINUTOS DO HTML
+    let horas = document.getElementById("horas") //ESSA VARIAVEL E AS HORAS DO HTML
+
+
+    let startTimer //Essa variavel guarda o nosso timer
+    let ms = "00" //Essa variavel guardará o milisegundos dentro do Java script 
+    let seg = "00" // Essa variavel guardará os segundos dentro do Java script
+    let min = "00" // Essa variavel guardará os minutos dentro do Java script
+    let hr = "00" // Essa variavel guardará as horas dentro do Java script
+
+    // Essa funcao dispara o timer e é chamado quando eu clico no botão Start
+    function start() {
+        startTimer = setInterval(function () {
+            ms++
+
+
+            if (ms == 100) {
+                seg++
+
+                if (seg < 10) {
+                    seg = "0" + seg
+                }
+
+                ms = 0
+            }
+
+            if (seg == 60) {
+                min++
+
+                if (min < 10) {
+                    min = "0" + min
+                }
+
+                seg = 0
+            }
+
+            if (min == 60) {
+                hr++
+
+                if (hr < 10) {
+                    hr = "0" + hr
+                }
+
+                min = 0
+            }
+
+            btnStart.classList.add("ativo")
+            btnStop.classList.remove("ativo")
+            atualizaValor()
+        }, 10); // de quanto em quanto tempo sera chamado em milisegundos
+    }
+    
+    function stop() { // PÁRA O CRONOMETRO
+            clearInterval(startTimer) // PAUSA O SET INTERVAL
+            btnStop.classList.add("ativo")
+            btnStart.classList.remove("ativo")
+        }
+
+        function reset() { // RESETA O TIMER
+            clearInterval(startTimer) // PAUSA O SET INTERVAL
+            ms = "00"
+            seg = "00"
+            min = "00"
+            hr = "00"
+            atualizaValor()
+            btnStart.classList.remove("ativo")
+            btnStop.classList.remove("ativo")
+                 
+        }
+
+        function atualizaValor() {
+            mili.innerHTML = ms
+            segundos.innerHTML = seg
+            minutos.innerHTML = min
+            horas.innerHTML = hr
+        }
+
+
+        btnStart.addEventListener("click", start)
+        btnStop.addEventListener("click", stop)
+        btnReset.addEventListener("click", reset)
+</SCRIPT>
+ </BODY></HTML>

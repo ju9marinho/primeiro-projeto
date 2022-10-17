@@ -1,0 +1,4 @@
+13/07
+Projeto CSS - Wide Coverage location
+1 criar html e css
+2 criar links e header

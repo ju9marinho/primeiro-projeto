@@ -1,0 +1,106 @@
+HTML
+27/06
+As tags tem abertura e fechamento, 
+mas algumas somente de abertura.
+As tags tem conteúdo ou não, e algumas tags tem 
+parametros.
+As tags são sempre com letra minúscula.
+-----------
+Tag de input não tem fechamento.
+Tag sem fechamento, o VS Code não completa/fecha.
+Tag de imagem é só assim <img>.
+Caso eu esqueça ou não saiba qual a tag usar, 
+buscar no google.
+<img src="colar  image address">.
+--------------
+Como preparar o HTML:
+1 - Todo html tem que começar com <!DOCTYPE html>. 
+<!-- define a versão do HTML. -->
+
+2 - Toda pagina precisa conter as tags de abertura e 
+fechamento de HTML, é tudo que fica dentro
+do site:
+<html
+</html>
+
+3 - é necessário conter o idioma do site:
+lang"pt-br">
+
+4 - <head> Vai as configurações do site.
+Por exemplo, o título:
+<title> É onde vai o título na barra de endereço.
+
+5 - <body> Colocar todas as tags que
+aparecem no site. </body>
+
+6 - DICA - coloca html e o vs code ja traz
+as informações acima.
+--------------------------------------------------
+SEO - são estratégias para ficar melhor 
+ranqueado no google.
+--------------------------------------------------
+Tag - texto - quanto maior o número do h,
+menos importante é o texto.
+Ex: <h1>
+<h2>
+<h3>
+É recomendado ter apenas uma h1 no site.
+--------------------------------------------------
+- A tag strong indica ao google que o termo 
+é importante. Fica negrito igual a tag <b>.
+--------------------------------------------------
+Navegando entre pastas:
+./ vai buscar nas pasta que você está;
+../ vai buscar pasta acima de da pasta que estou
+pasta de cima;
+../../acessar a pasta mais acima ainda.
+--------------------------------------------------
+Comando para reiniciar o vs code: 
+CTRL, Shift + P
+reload window
+--------------------------------------------------
+28/06
+Links - tag <a> </a>
+<a href= para habilitar link de clicar
+parametro de target="_blank" para abrir em outra aba.
+---------------------------------------------------
+para mandar email:
+< href="
+mailto:juliana.marinho@dhlcom">Envie um email</a>
+--------------------------------------------------
+<div> </div> é uma caixa para colocar coisas dentro.
+Serve para separar conteúdos / organizar.
+<span></span> pra só aquela palavra seja diferente,
+pra diferenciar alguma palavra, alguma parte...
+--------------------------------------------------
+29/06
+inputs:
+label - Para nomear o input
+Types: color, range
+<input type="range">
+<input type="checkbox"/>
+<input type="file"/>
+---------------------------------------------------
+01/07
+Forms
+get - aparece na url
+post - os dados são enviados por "baixo dos panos",
+não aparece
+Quando for colocar file / arquivo
+o enctype serve para avisar o servidor que 
+no formulario vai seguir um vídeo, uma foto, 
+um arquivo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

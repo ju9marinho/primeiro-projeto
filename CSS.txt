@@ -1,0 +1,54 @@
+01/07 CSS
+tag <style> para criar o CSS dentro da aba de HTML,
+logo após o <body>.
+--------------------------------------------------
+04/07 Seletores CSS
+Seletor * - significa tudo - todos os elementos da página
+Seletor class - como um cep. Pra vários elementos.
+Seletor ID - como um RG ou CPF, ou seja, único. Para
+um elemento.
+# pra chamar o ID
+Exe: #titulo {}
+. pra chamar a classe (class)
+--------------------------------
+Cores
+rgb para red, green, blue.
+a intensidade de cada cor vai de 0 a 255.
+Sites de cores:
+w3school / color.adobe.com / coolors.co / 
+extensões google chrome - colorzilla
+---------------------------------------------------
+09/07
+Google fonts
+---------------------------------------------------
+11/07
+Margin - qdo colocar 3 parametros, vai ficar
+considerado o de cima, dos lados e embaixo.
+
+Figma e Adobe XD - ferramentas para criar layouts. 
+----------------------------------------------------
+12/07
+
+Flutter - linguagem de programação
+PHP
+----------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
